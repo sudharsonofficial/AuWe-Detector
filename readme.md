@@ -15,7 +15,7 @@
 1. Clone this repository to your local machine:
 
    ```
-   git clone https://github.com/yourusername/AuWeDetector.git
+   git clone https://github.com/william-renaldy/HackAI-Hack-230634.git
    ```
 
 2. Create a virtual environment (recommended) and activate it:
