@@ -1,7 +1,5 @@
 # AuWeDetector - Automatic Weather Detection
 
-![AuWeDetector Logo](https://yourwebsite.com/logo.png)
-
 **AuWeDetector** is a Django-based web application that automatically detects and alerts users about weather conditions in specific locations. It allows users to add cities and set temperature thresholds, and the application will send email alerts when the weather conditions fall outside the specified range.
 
 ## Features
