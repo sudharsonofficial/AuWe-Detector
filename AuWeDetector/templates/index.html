@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% load static %}
+    <link rel="stylesheet" href="{% static '/css/styles.css' %}">
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <title>Weather App</title>
+</head>
+<body>
+    <header>
+        <h1>AuWe Detector</h1>
+    </header>
+    <div class="weather-box">
+        <div id="cities-container">
+            <!-- City cards will be added here dynamically -->
+        </div>
+        <button id="add-city-button">Add City</button>
+        <div id="city-form" class="hidden">
+            <form id="city-form-inner">
+                <label id="city-name" for="city">City:</label>
+                <select id="city"  name="city">
+                    <option value="" disabled selected>Select City</option>
+                    <option value="ariyalur">Ariyalur</option>
+                    <option value="chennai">Chennai</option>
+                    <option value="coimbatore">Coimbatore</option>
+                    <option value="cuddalore">Cuddalore</option>
+                    <option value="dharmapuri">Dharmapuri</option>
+                    <option value="dindigul">Dindigul</option>
+                    <option value="erode">Erode</option>
+                    <option value="kanchipuram">Kanchipuram</option>
+                    <option value="kanyakumari">Kanyakumari</option>
+                    <option value="karur">Karur</option>
+                    <option value="krishnagiri">Krishnagiri</option>
+                    <option value="madurai">Madurai</option>
+                    <option value="nagapattinam">Nagapattinam</option>
+                    <option value="namakkal">Namakkal</option>
+                    <option value="nilgiris">Nilgiris (Udhagamandalam)</option>
+                    <option value="perambalur">Perambalur</option>
+                    <option value="pudukkottai">Pudukkottai</option>
+                    <option value="ramanathapuram">Ramanathapuram</option>
+                    <option value="salem">Salem</option>
+                    <option value="sivaganga">Sivaganga</option>
+                    <option value="tenkasi">Tenkasi</option>
+                    <option value="thanjavur">Thanjavur</option>
+                    <option value="theni">Theni</option>
+                    <option value="thoothukudi">Thoothukudi (Tuticorin)</option>
+                    <option value="tiruchirappalli">Tiruchirappalli (Trichy)</option>
+                    <option value="tirunelveli">Tirunelveli</option>
+                    <option value="tirupathur">Tirupathur</option>
+                    <option value="tiruppur">Tiruppur</option>
+                    <option value="tiruvallur">Tiruvallur</option>
+                    <option value="tiruvannamalai">Tiruvannamalai</option>
+                    <option value="tiruvarur">Tiruvarur</option>
+                    <option value="vellore">Vellore</option>
+                    <option value="viluppuram">Viluppuram</option>
+                    <option value="virudhunagar">Virudhunagar</option>
+                    <option value="chengalpattu">Chengalpattu</option>
+                    <option value="ranipet">Ranipet</option>
+                    <option value="kallakurichi">Kallakurichi</option>
+                </select>
+                <label for="max-temp">Max Temp(°C):</label>
+                <input type="number" id="max-temp" name="max-temp" step="0.01">
+                <label for="min-temp">Min Temp(°C):</label>
+                <input type="number" id="min-temp" name="min-temp" step="0.01">
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email">
+                <button type="submit">Submit</button>
+                
+
+            </form>
+        </div>
+    </div>
+    <footer>
+        © 2023 Copyright: Team AuWe
+    </footer>
+
+    {% load static %}
+    <script src="{% static '/js/script.js' %}"></script>
+</body>
+</html>

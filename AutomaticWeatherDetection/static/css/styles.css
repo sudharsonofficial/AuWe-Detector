@@ -1,0 +1,191 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #3498db;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.weather-box {
+    margin: 20px auto;
+    width: 80%;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.input-container {
+    margin-bottom: 20px;
+    padding-right: 50px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+select,
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    padding-right: 0px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.result-container {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    min-height: 100px;
+}
+
+button {
+    display: block;
+    margin: 0 auto;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+.hidden {
+    display: none;
+}
+
+.city-card {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+}
+
+.city-card button {
+    margin-left: 10px;
+    align-items: right;
+}
+/* CSS for aligning info button to the right */
+.city-card {
+    display: flex;
+    align-items: left;
+    justify-content: space-between;
+}
+
+/* CSS to hide the info box by default */
+.info-box.hidden {
+    display: none;
+}
+/* CSS for styling the footer */
+/* CSS for a sticky footer */
+
+
+
+main {
+    flex-grow: 1;
+}
+
+footer {
+    background-color: #3498db;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Your existing CSS styles here */
+
+/* CSS for city card */
+.city-card {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-items: flex-start; /* Align contents to the left */
+}
+
+.info-button {
+    align-self: right; /* Align info button to the right corner */
+    cursor: pointer;
+}
+.city-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* CSS for info box */
+.info-box {
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    border-top: none;
+    border-radius: 5px 5px 5px 5px;
+    padding: 10px;
+    margin-right: 20%;
+    display: none; /* Initially hidden */
+}
+
+.show-info {
+    background-color: #f8f8f8; /* Match the background color with the previous CSS */
+    border: 2px solid #ccc; /* Add a border when info is shown */
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3); /* Add a subtle shadow when info is shown */
+    height: auto; /* Allow the city card to expand to fit the info box content */
+    
+}
+
+
+/* Remove the 'hidden' class from the info box when .show-info is applied */
+.show-info .info-box {
+    display: block;
+}
+/* Styling for the email input box */
+input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    padding-right: 0px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px; /* Font size */
+    outline: none; /* Remove default input outline */
+}
+
+input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    padding-right: 0px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px; /* Font size */
+    outline: none; /* Remove default input outline */
+}
+.temp{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content:flex-start;
+}
