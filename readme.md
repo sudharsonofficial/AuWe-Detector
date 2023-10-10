@@ -68,7 +68,7 @@ We welcome contributions from the community! If you'd like to contribute to this
 
 ## Contact
 
-For questions, suggestions, or feedback, please contact us at [your.email@example.com](mailto:your.email@example.com).
+For questions, suggestions, or feedback, please contact us at [auwedetector@gmail.com](mailto:auwedetector@gmail.com).
 
 ---
 
