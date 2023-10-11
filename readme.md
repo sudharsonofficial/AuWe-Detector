@@ -18,39 +18,27 @@
    git clone https://github.com/william-renaldy/HackAI-Hack-230634.git
    ```
 
-2. Create a virtual environment (recommended) and activate it:
 
-   ```
-   python3 -m venv auwedetector-venv
-   source auwedetector-venv/bin/activate
-   ```
-
-3. Install the project dependencies:
+2. Install the project dependencies:
 
    ```
    pip install -r requirements.txt
    ```
 
-4. Configure the application by setting up your email and API keys in `AuWeDetector/agents/config.py`.
+3. Configure the application by setting up your email and API keys in `AuWeDetector/agents/config.py`.
 
-5. Run database migrations:
 
-   ```
-   python manage.py makemigrations
-   python manage.py migrate
-   ```
-
-6. Start the development server:
+4. Start the development server:
 
    ```
    python manage.py runserver
    ```
 
-7. Access the application in your web browser at `http://localhost:8000`.
+5. Access the application in your web browser at `http://127.0.0.1:8000`.
 
 ## Usage
 
-1. Visit the homepage at `http://localhost:8000`.
+1. Visit the homepage at `http://127.0.0.1:8000`.
 2. Click on "Add City" to specify a location and temperature thresholds.
 3. The application will periodically check the weather conditions for added cities and send email alerts if needed.
 
