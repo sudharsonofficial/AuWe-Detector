@@ -34,6 +34,7 @@ class Mail():
         Returns:
             None
         """
+        self.smtp = smtplib.SMTP('smtp.gmail.com', 587)
         self.smtp.starttls()
         self.smtp.login(self.email, self.password)
         self.mail = mail
